@@ -16,10 +16,15 @@ ________________________________________________________________________________
 run_CleanData.sh does the following:
 
 1) Unzips getdata-projectfiles-UCI HAR Dataset.zip.
+
 2) Renames the newly created directory to remove the blank spaces.
+
 3) Removes commas, paratheses, and dashes from the feature names.
+
 4) Calls the python script print_table.py which merges all data into txt file.
+
 5) Calls the python script parse_table.py which prints the table in a comma separated format.
+
 6) Finally, tidies up the working directory by removing temporary files and mover the original zip file
 
 Comments are provided within each script describing the individual steps.
