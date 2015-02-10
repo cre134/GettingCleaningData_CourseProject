@@ -1,6 +1,6 @@
 library(dplyr)
 
-#### Read in merged dataset ####
+##### Read in merged dataset #####
 alldata<-read.csv("cleandata.csv")
 
 #### Change exercise names from numberic to string ####
