@@ -11,4 +11,5 @@ following command in a bash shell:
 sh run_CleanData.sh
 
 This will unzip the data file and create a file named "cleandata.csv".  cleandata.csv is then read into
-R and the remaining steps are formed calling run_analysis.R
+R and the remaining steps are formed calling run_analysis.R.  Comments are provided within each script
+describing the individual steps.
