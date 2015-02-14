@@ -1,0 +1,101 @@
+The section 'Feature Selection' is taken directly from features_info.txt that was provided in 'getdata-projectfiles-UCI HAR Dataset.zip'
+I did not change the measurement names because I think the format provided are compact and provide a sufficient description of each measurement.
+
+The section 'Analysis script' descibes the output matrix that provides the measurements for which I calculated the average for the final output table.
+
+
+
+
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+==================
+
+
+Analysis script
+---------------
+
+The output from run_analysis.R calculates the average of the following measurements for each subject for each exercise.
+There are 79 features in the original feature list that contain a mean (46) or std (33) in the name.  
+The following lists the columns of the final output.  Column 1 list the subject/participant number,
+column 2 lists the exercise type.  The remaining matrix entries contain the averages of the measurements listed.
+
+ [1] "subject"                       "exercise"
+
+ [3] "tBodyAcc_mean_X"               "tBodyAcc_mean_Y"              
+ [5] "tBodyAcc_mean_Z"               "tBodyAcc_std_X"               
+ [7] "tBodyAcc_std_Y"                "tBodyAcc_std_Z"
+
+ [9] "tGravityAcc_mean_X"            "tGravityAcc_mean_Y"           
+[11] "tGravityAcc_mean_Z"            "tGravityAcc_std_X"            
+[13] "tGravityAcc_std_Y"             "tGravityAcc_std_Z"
+
+[15] "tBodyAccJerk_mean_X"           "tBodyAccJerk_mean_Y"          
+[17] "tBodyAccJerk_mean_Z"           "tBodyAccJerk_std_X"           
+[19] "tBodyAccJerk_std_Y"            "tBodyAccJerk_std_Z"
+       
+[21] "tBodyGyro_mean_X"              "tBodyGyro_mean_Y"             
+[23] "tBodyGyro_mean_Z"              "tBodyGyro_std_X"              
+[25] "tBodyGyro_std_Y"               "tBodyGyro_std_Z"
+
+[27] "tBodyGyroJerk_mean_X"          "tBodyGyroJerk_mean_Y"         
+[29] "tBodyGyroJerk_mean_Z"          "tBodyGyroJerk_std_X"          
+[31] "tBodyGyroJerk_std_Y"           "tBodyGyroJerk_std_Z"
+
+[33] "tBodyAccMag_mean"              "tBodyAccMag_std"
+
+[35] "tGravityAccMag_mean"           "tGravityAccMag_std"
+
+[37] "tBodyAccJerkMag_mean"          "tBodyAccJerkMag_std"
+
+[39] "tBodyGyroMag_mean"             "tBodyGyroMag_std" 
+
+[41] "tBodyGyroJerkMag_mean"         "tBodyGyroJerkMag_std"
+
+[43] "fBodyAcc_mean_X"               "fBodyAcc_mean_Y"              
+[45] "fBodyAcc_mean_Z"               "fBodyAcc_std_X"               
+[47] "fBodyAcc_std_Y"                "fBodyAcc_std_Z"
+
+[49] "fBodyAcc_meanFreq_X"           "fBodyAcc_meanFreq_Y"          
+[51] "fBodyAcc_meanFreq_Z"           
+
+[52] "fBodyAccJerk_mean_X"           "fBodyAccJerk_mean_Y"
+[54] "fBodyAccJerk_mean_Z"           "fBodyAccJerk_std_X"            
+[56] "fBodyAccJerk_std_Y"            "fBodyAccJerk_std_Z"            
+
+[58] "fBodyAccJerk_meanFreq_X"       "fBodyAccJerk_meanFreq_Y"       
+[60] "fBodyAccJerk_meanFreq_Z"      
+
+[61] "fBodyGyro_mean_X"              "fBodyGyro_mean_Y"             
+[63] "fBodyGyro_mean_Z"              "fBodyGyro_std_X"              
+[65] "fBodyGyro_std_Y"               "fBodyGyro_std_Z"
+       
+[67] "fBodyGyro_meanFreq_X"          "fBodyGyro_meanFreq_Y"         
+[69] "fBodyGyro_meanFreq_Z"          
+
+[70] "fBodyAccMag_mean"              "fBodyAccMag_std"               
+
+[72] "fBodyAccMag_meanFreq"         
+
+[73] "fBodyBodyAccJerkMag_mean"      "fBodyBodyAccJerkMag_std"
+
+[75] "fBodyBodyAccJerkMag_meanFreq"  
+
+[76] "fBodyBodyGyroMag_mean"         "fBodyBodyGyroMag_std"          
+
+[78] "fBodyBodyGyroMag_meanFreq"
+
+[79] "fBodyBodyGyroJerkMag_mean"     "fBodyBodyGyroJerkMag_std"
+
+[81] "fBodyBodyGyroJerkMag_meanFreq"
+
+
