@@ -35,7 +35,7 @@ First, run_analysis.R reads in the merged dataset, 'cleandata.csv', created in S
 converts the numberic exercise codes into strings describing the exercise.   Then the column names 
 are scanned for the key words 'mean' and 'std' and stores the column numbers in a vector named 'trimmedset'. 
 The vector trimmedset is used to create a parsed data set containing only columns with the mean (46 columns) 
-and standard deviation (33 columns).  The parsed data set is stored into a new data.frame called 
+and standard deviation (33 columns) measurements.  The parsed data set is stored into a new data.frame called 
 'parse_totalset' with dimensions 10299x81.  'parse_totalset' is then grouped by subject/participant 
 followed by exercise.  summarize is used on each column to report the average of each average/std measurement.
 
