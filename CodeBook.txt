@@ -1,6 +1,6 @@
 The section 'Feature Selection' is taken directly from features_info.txt that was provided in 
 'getdata-projectfiles-UCI HAR Dataset.zip'.  I did not change the measurement names because I 
-think the format provided are compact and provide a sufficient description of each measurement.
+think the format provided is compact and provides a sufficient description of each measurement.
 
 The section 'Analysis script' descibes the output matrix that provides the measurements for 
 which I calculated the average for the final output table.
@@ -39,7 +39,7 @@ Analysis script
 
 The output from run_analysis.R calculates the average of the following measurements for each subject for each exercise.
 There are 79 features in the original feature list that contain a mean (46) or std (33) in the name.  
-The following lists the columns of the final output.  Column 1 list the subject/participant number,
+The following lists the columns of the final output.  Column 1 lists the subject/participant number,
 column 2 lists the exercise type.  The remaining matrix entries contain the averages of the measurements listed.
 
  [1] "subject"                       "exercise"
