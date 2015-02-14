@@ -24,7 +24,7 @@ run_CleanData.sh does the following:
 
 5) Calls the python script parse_table.py which prints the table in a comma separated format.
 
-6) Finally, tidies up the working directory by removing temporary files and mover the original zip file
+6) Finally, tidies up the working directory by removing temporary files and moving the original zip file.
 
 Comments are provided within each script describing the individual steps.
 ________________________________________________________________________________________________________
