@@ -1,5 +1,5 @@
 # GettingCleaningData_CourseProject
-This repo contains the necessary files for performing the course project for the 'Getting and Cleaning Data'.
+This repo contains the necessary files for performing the course project for 'Getting and Cleaning Data'.
 
 
 Step 1: Merge the training and the test sets to create one data set.
